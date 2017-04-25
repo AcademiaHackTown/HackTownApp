@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--
+ * Please see the included README.md file for license terms and conditions.
+ -->
+<head>
+   <title>River</title>
+   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+   <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ <meta name="mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+   <link rel="stylesheet" href="css/font-awesome.min.css" />
+   <link rel="stylesheet" href="jqm/jquery.mobile-min.css" />
+   <link rel="stylesheet" href="vendor/waves/waves.min.css" />
+   <link rel="stylesheet" href="vendor/wow/animate.css" />
+   <link rel="stylesheet" href="css/nativedroid2.css" />
+   <link rel="stylesheet" href="css/nativedroid2.color.black.css" />
+   <link rel="stylesheet" href="css/estrutura.css" />
+   <style>
+       /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+       /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+       @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+       @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+   </style>
+ <script type="application/javascript" src="lib/jquery.min.js"></script>
+ <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+ <script src="vendor/wow/wow.min.js"></script>
+ <script src="js/nativedroid2.js"></script>
+ <script src="nd2settings.js"></script>
+ <script src="vendor/waves/waves.min.js"></script> <!-- pacote de animacoes -->
+ <script src="js/jquery.nicescroll.min.js"></script> <!-- remove as barras de rolagem -->
+ <script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+ <script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+ <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+</head>
+
+<body>
+<div data-role="page" data-title="Home" id="page">
+  <div data-role="header" data-position="fixed">
+  <img src="images/logo.png" class="img img-header">
+  <img src="images/ranking-icon.png" class="img img-header" style="float: right;">
+  <!-- <h1>Ranking individual</h1> -->
+  </div>
+ <div role="main" class="ui-content  jqm-content jqm-fullwidth" data-inset="false" style="padding: 0px;">
+   <div class="mainArea">
+      <div class="collapsible-set" id="tabelaRanking">
+      </div>
+   </div>
+ </div>
+ <div data-role="footer" data-animate="true" data-position='fixed' id="footer">
+     <div class='row around-xs'>
+    	<div class='col-xs-4'>
+        <a href="#" class="ui-btn ui-btn-left" id="home"><i class="zmdi zmdi-arrow-left  zmdi-hc-3x"></i></a>
+    	</div>
+    	<div class='col-xs-2'>
+
+    	</div>
+    	<div class='col-xs-6'>
+    		<a href='#' class='waves-effect waves-button waves-effect waves-button groupRanking' data-ajax='false' id="groupRanking">
+    			<img src="images/granking-icon.png" class="img img-responsive btn-ranking">
+    		</a>
+    	</div>
+    </div>
+ </div>
+</div>
+</body>
+</html>

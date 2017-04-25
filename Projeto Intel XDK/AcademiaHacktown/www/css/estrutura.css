@@ -18,6 +18,8 @@ html {
 body {
     -ms-touch-action: pan-y ;
     -ms-content-zooming: none ;
+    background: lightgray ;
+    color: black ;
 }
 input, textarea{
     -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
@@ -37,14 +39,16 @@ a{
   margin: 0 auto!important;
   z-index: 1px;
 }
+.img-logo-big{
+	width: 70%;
+  padding-top: 20px;
+  margin: 0 auto!important;
+  z-index: 1px;
+}
 .logo{
   background: #fff;
   width: 100%;
   height: 80px;
-}
-.mainArea{
-  padding: 20px;
-  margin-top: 50px;
 }
 .form-login{
   text-align: center!important;
@@ -65,4 +69,66 @@ a{
 .btn-ranking{
   padding: 10px;
   cursor: pointer;
+}
+.mainArea{
+  padding: 0px;
+  margin: 0 auto;
+}
+.loginArea{
+  padding: 20px;
+  margin-top: 50px;
+}
+.collapse-ranking{
+  background: #0099ff!important;
+  color: #FFF;
+  margin: 0!important;
+  text-align: center!important;
+}
+.collapse-ranking-imp{
+  background: #067cca!important;
+  color: #FFF;
+  margin: 0!important;
+  text-align: center!important;
+}
+#collapse > h3{
+  padding-top: 5%!important;
+  padding-bottom: 5%!important;
+  margin: 0;
+}
+.ui-listview li {
+    font-size: 1.5EM;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0!important;
+    text-align: center;
+}
+.aluno{
+  background: #eeeeff!important;
+  padding: 5%;
+}
+.aluno-imp{
+  background: #FFF!important;
+  padding: 5%;
+}
+
+.pts{
+  background: #0087a8!important;
+  padding: 5%;
+  color:#FFF;
+}
+.pts-imp{
+  background: #006680!important;
+  padding: 5%;
+  color:#FFF;
+}
+.img-header{
+  padding: 10px;
+}
+#footer{
+  background: #000;
+  color: #FFF;
+}
+#footer a{
+  color: #FFF:
 }
